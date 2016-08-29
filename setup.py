@@ -40,6 +40,11 @@ extensions = [
     Extension(
         "freenas.utils.query",
         ["freenas/utils/query.pyx"]
+    ),
+    Extension(
+        "freenas.utils.yp",
+        ["freenas/utils/yp.pyx"],
+        libraries=["ypclnt"]
     )
 ]
 
